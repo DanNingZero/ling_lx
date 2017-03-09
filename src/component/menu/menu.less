@@ -1,0 +1,140 @@
+@import "~asha/_.less";
+
+.inu-menu{
+    >.icon{
+        cursor: pointer;
+        z-index: 20;
+        &.i_icon{
+            position: absolute;
+            top:7%;
+            right: 6%;
+        }
+        &.h_icon{
+            position: fixed;
+            right: 0;
+            top: 19px;
+            display:inline-block;
+            padding:0 15px;
+            @media all and (min-width: 768px){
+                top: 21px;
+                padding:0 25px;
+            }
+            @media all and (min-width: 992px){
+                padding:0 35px;
+            }
+            @media all and (min-width: 1200px){
+                
+            }
+            @media all and (min-width: 1600px){
+                
+            }
+            >.line{
+                background-color: #444;
+            }
+        }
+        >.line{
+            width: 34px;
+            height: 3px;
+            background-color: #ecf0f1;
+            display: block;
+            margin-bottom: 8px;
+            border-radius: 50px;
+            -webkit-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            @media all and (min-width: 768px){
+                width: 38px;
+                margin-bottom: 9px;
+            }
+        }
+        //叉叉
+        &.on{
+            >.line{
+                background-color: #444;
+            }
+            >.line:nth-child(2){
+                opacity: 0;
+            }
+            >.line:nth-child(1){
+                -webkit-transform: translateY(11px) rotate(45deg);
+                -ms-transform: translateY(11px) rotate(45deg);
+                -o-transform: translateY(11px) rotate(45deg);
+                transform: translateY(11px) rotate(45deg);
+            }
+            >.line:nth-child(3){
+                -webkit-transform: translateY(-11px) rotate(-45deg);
+                -ms-transform: translateY(-11px) rotate(-45deg);
+                -o-transform: translateY(-11px) rotate(-45deg);
+                transform: translateY(-11px) rotate(-45deg);
+            }
+            @media all and (min-width: 768px){
+                >.line:nth-child(1){
+                    -webkit-transform: translateY(12px) rotate(45deg);
+                    -ms-transform: translateY(12px) rotate(45deg);
+                    -o-transform: translateY(12px) rotate(45deg);
+                    transform: translateY(12px) rotate(45deg);
+                }
+                >.line:nth-child(3){
+                -webkit-transform: translateY(-12px) rotate(-45deg);
+                -ms-transform: translateY(-12px) rotate(-45deg);
+                -o-transform: translateY(-12px) rotate(-45deg);
+                transform: translateY(-12px) rotate(-45deg);
+            }
+            }
+        }
+    }
+    // ~div{
+    //     .transition;
+    // }
+    &.show{
+        ~div{
+            // margin-right: 300px;
+        }
+        >.menu{
+            width: 200px;
+            padding-left:2.5em;
+            @media all and (min-width: 768px){
+                width: 300px;
+                padding-left: 5em;
+            }
+            @media all and (min-width: 992px){
+                
+            }
+            @media all and (min-width: 1200px){
+                
+            }
+            @media all and (min-width: 1600px){
+                
+            }
+        }
+    }
+    >.menu{
+        width: 0px;
+        background-color: #f2f2f2;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 19;
+        height: 100%;
+        padding-left: 0;
+        .transition;
+        >.list{
+            position: absolute;
+            top: 20%;
+            >div{
+                line-height: 4em;
+                display: block;
+                height: 20%;
+                position: relative;
+                top: 20%;
+                cursor: pointer;
+                font-size: 1.2em;
+                &:hover{
+                    color:#005481;
+                }
+            }
+        }
+    }
+}
+

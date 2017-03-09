@@ -1,0 +1,60 @@
+@import "~asha/_.less";
+
+.inu-table{
+    &.full{
+        >table{
+            width: 100%;
+        }
+    }
+    >table{
+        margin: auto;
+        >thead{
+            >tr{
+                >th{
+                    padding: 5px 12px;
+                    border: 1px solid #ccc;
+                    background: url(./tab-thbg.png) #f9f9f9 0 bottom repeat-x;
+                }
+            }
+        }
+        >tbody{
+            >tr{
+                &:nth-child(even){
+                    background: #EBEBEB;
+                    &.click{
+                        .magic-color(#efefef,#101010);
+                    }
+                    >td{
+                        &.click{
+                            .magic-color(#efefef,#101010);
+                            color: #3892E7;
+                        }
+                        &.change{
+                            .magic-color(@color_warning)
+                        }
+                    }
+                }
+                &:nth-child(odd){
+                    background: #fff;
+                    &.click{
+                        .magic-color(#fff,#202020);
+                    }
+                    >td{
+                        &.click{
+                            .magic-color(#fff,#202020);
+                            color: #3892E7;
+                        }
+                        &.change{
+                            .magic-color(@color_warning)
+                        }
+                    }
+                }
+                >td{
+                    padding: 5px 12px;
+                    border: 1px solid #ccc;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+@import "~asha/_.less";
+
+.inu-advantage{
+    >.content{
+        margin-left:auto;
+        margin-right: auto;
+        padding-right: 15px;
+        padding-left:15px;
+        padding-top: 7em;
+        padding-bottom: 2%;
+        >.c_list{
+            padding-bottom: 7%;
+            >.c_l_img{
+                position: relative;
+                padding-top:72%;
+                overflow: hidden;
+                >span{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    position: absolute;
+                    width:100%;
+                    top:0;
+                    left:0;
+                    >img{
+                        max-width: 100%;
+                        display: block;
+                        height: auto;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+            >.c_l_text{
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-top: 3%;
+                >h2{
+                    font-weight: 100;
+                }
+                >article{
+                    font-size: 1em;
+                    line-height: 1.6em;
+                }
+            }
+        }
+    }
+    @media all and (min-width: 768px){
+        .content{
+            width: 750px;
+            
+        }
+    }
+    @media all and (min-width: 992px){
+        .content{
+            width:970px;
+            padding-top: 8em;
+            >.c_list{
+                overflow: hidden;
+                >.c_l_img{
+                    width: 30%;
+                    padding-top: 27%;
+                }
+                >.c_l_text{
+                    width: 70%;
+                    text-align: left;
+                }
+                >div{
+                    float: left;
+                }
+            }
+        }
+    }
+    @media all and (min-width: 1200px){
+        .content{
+            width:1170px;
+            padding-top: 9em;
+        }
+    }
+    @media all and (min-width: 1600px){
+        .content{
+            width:1370px;
+        }
+    }
+}
+

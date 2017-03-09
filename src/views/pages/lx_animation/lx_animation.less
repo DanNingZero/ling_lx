@@ -1,0 +1,234 @@
+@import "~asha/_.less";
+
+h1,h2,h3,h4,h5{
+    font-weight: 100;
+}
+
+.inu-lx_animation{
+    >.header{
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        z-index: 10000;
+        background: transparent;
+        transition: all 0.3s ease-out;
+        padding: 0 20px;
+        // color:#fff;
+        >.logo{
+            float: left;
+            font: small-caps 700 18px/60px "Microsoft YaHei"; 
+        }
+        >i{
+            float: right;
+            line-height: 60px;
+        }
+    }
+    >.video{
+        width: 100%;
+        height: 650px;
+        position: relative;
+        overflow: hidden;
+        // >.bgvideo{
+        //     display: block;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 50%;
+        //     min-width: 100%;
+        //     min-height: 100%;
+        //     object-fit: cover;
+        //     transform: translate(-50%, 0);
+        //     -webkit-transform: translate(-50%, 0);
+        //     -moz-transform: translate(-50%, 0);
+        //     -ms-transform: translate(-50%, 0);
+        //     -o-transform: translate(-50%, 0);
+        //     z-index: 10;
+        //     >source{
+        //         min-width: 100%;
+        //         min-height: 100%;
+        //         height: auto;
+        //         width: auto;
+        //     }
+        // }
+        >.bg{
+            background-color: #eee;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    }
+    >.product{
+        margin-top: 80px;
+        >.p_title{
+            margin:35px 0;
+            >a{
+                float: right;
+                border: 1px solid #dedede;
+                border-radius: 20px;
+                display: inline-block;
+                width: 80px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                font-size: 12px;
+            }
+            >.title{
+                >h3{
+                    line-height: 0;
+                    margin-bottom: 12px;
+                }
+                >span{
+                    font-size: 14px;
+                }
+            }
+        }
+        >.p_list{
+            >ul{
+                width: 110%;
+                overflow: hidden;
+                >li{
+                    width: 370px;
+                    height: auto;
+                    float: left;
+                    margin-right: 20px;
+                    overflow: hidden;
+                    text-align: center;
+                    >a{
+                        >img{
+                            position: relative;
+                            display: block;
+                            width: 370px;
+                            // height: 100%;
+                            height: 260px;
+                            overflow: hidden;
+                        }
+                    }
+                    >div{
+                        margin: 16px 0 30px 0;
+                        h5{
+                            margin-bottom: 6px;
+                            margin-top: 6px;
+                            font-size: 14px;
+                        }
+                        >aside{
+                            font-size: 12px;
+                            color: #888;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    >.w{
+        //提交中。。。
+        // >.bottom{
+        //     >.loading {
+        //         display: inline-block; 
+        //         height: 1em; line-height: 1;
+        //         vertical-align: -.25em;
+        //         overflow: hidden;
+        //     }
+        //     >.loading::before {
+        //         display: block;
+        //         // content: '...\A..\A.';
+        //         content: "/\A–\A\\\A|";
+        //         white-space: pre-wrap;
+        //         animation: loading 3s infinite step-start both;
+        //     }
+        //     @keyframes loading {
+        //         33% { transform: translateY(-2em); }
+        //         66% { transform: translateY(-1em); }
+        //     }
+        //     // .loading {
+        //     //   display: inline-block;
+        //     //   overflow: hidden;
+        //     //   height: 1.3em;
+        //     //   margin-top: -0.3em;
+        //     //   line-height: 1.5em;
+        //     //   vertical-align: text-bottom;
+        //     // }
+
+        //     // .loading::after {
+        //     //   display: inline-table;
+        //     //   white-space: pre;
+        //     //   text-align: left;
+        //     // }
+        //     // .loading::after {
+        //     //   content: "\A.\A..\A...";
+        //     //   animation: spin4 2s steps(4) infinite;
+        //     // }
+        //     // @keyframes spin4  { to { transform: translateY( -6.0em); } 
+        // }
+        //提交中2。。。
+        @supports (display:none) {
+            dot {
+                display: inline-block; 
+                width: 3ch;
+                text-indent: -1ch;
+                vertical-align: bottom; 
+                overflow: hidden;
+                animation: dot 3s infinite step-start both;
+                font-family: Consolas, Monaco, monospace;
+            }
+        }
+        @keyframes dot {
+            33% { text-indent: 0; }
+            66% { text-indent: -2ch; }
+        }
+        .down {
+            width: 300px;
+            max-height: 80px;
+            transition: max-height .25s;
+            position: relative;
+            overflow: hidden;
+        }
+        .more {
+            position: absolute;
+            width: 100%;
+            padding-top: 20px;
+            bottom: 0; left: 0;
+            text-align: right;
+            background: linear-gradient(to bottom, hsla(0,0%,100%,0), hsla(0,0%,100%,.9) 50%, hsla(0,0%,100%,1));
+        }
+        .active {
+            max-height: 200px;
+        }
+        .active > .more {
+            display: none;
+        }
+    }
+}
+
+@-webkit-keyframes slideInDown {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        visibility: visible
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        visibility: visible
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+.slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;     //持续时间
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;     //模式
+}

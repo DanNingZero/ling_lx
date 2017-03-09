@@ -1,0 +1,148 @@
+@import "~asha/css/_.less";
+
+
+.xuan_box{
+    width: 1200px;
+    background-color: #fff;
+    padding:0 20px;
+    margin: 30px auto;
+    .xb_list{
+        height: 50px;
+        border-bottom: 1px solid #eee;
+        .xb_l_title{
+            margin-right: 20px;
+            float: left;
+            padding-top: 16px;
+        }
+        .xb_l_conten{
+            overflow: hidden;
+            padding-top: 13px;
+            >a{
+                float: left;
+                margin-right: 30px;
+                padding: 3px 5px;
+                &.on{
+                    background-color: #11baa7;
+                    color:#fff;
+                }
+            }
+        }
+    }
+    .xb_list:last-child{
+        border-bottom:0;
+    }
+}
+
+.answer_content{
+    width: 1200px;
+    margin:20px auto;
+    overflow: hidden;
+    .testpaper_box{
+        width: 228px;
+        float: left;
+        >.testpaper_box_a{
+            height: 49px;
+            line-height: 49px;
+            display: block;
+            background-color: #fff;
+            text-align: center;
+            cursor: pointer;
+            &:hover{
+                background-color: #e5f5f3;
+            }
+            &.on{
+                background-color: #11baa7;
+                color: #fff;
+            }
+
+        }
+    }
+    .oa_Tab_content_wrap{
+        width: 948px;
+        float: right;
+    }
+    .test_paper_list{
+        width: 100%;
+        background-color: #fff;
+        padding-bottom: 30px;
+        .test_paper_list_num{
+            padding-left: 20px;
+            line-height: 50px;
+            height: 50px;
+            border-bottom:1px solid #eee;
+        }
+        .test_paper_list_con{
+            .t_p_l_c_box{
+                padding: 25px 20px 0px 20px;
+                overflow: hidden;
+                &:hover{
+                    background-color: #fcfcfc;
+                    color:#11baa7;
+                }
+                >a{
+                    overflow: hidden;
+                    display: block;
+                    height: 144px;
+                    border-bottom:1px solid #eee;
+                    .box_tu{
+                        width: 105px;
+                        height: 118px;
+                        display: inline-block;
+                        background-color: #eee;
+                        float: left;
+                    }
+                    .box_rihgt{
+                        overflow: hidden;
+                        margin-left:130px;
+                        .b_left{
+                            float:left;
+                            width:45%;
+                            >h3{
+                                font-size: 16px;
+                                font-weight:normal;
+                                line-height: 26px;
+                            }
+                            .b_many{
+                                color:#d63a62;
+                                margin: 12px 0;
+                                >em{
+                                    font-size: 16px;
+                                }
+                                .b_nmb{
+                                    font-size: 26px;
+                                    font-weight: 800;
+                                }
+                            }
+                            span{
+                                color: #999;
+                                font-size: 12px;
+                            }
+                        }
+                        .b_right{
+                            float:right;
+                            text-align: right;
+                            .fengshu{
+                                color:#f96;
+                                .f_nmb{
+                                    font-size: 22px;
+                                }
+                            }
+                            .br_conent{
+                                font-size:12px;
+                                color:#999;
+                                margin-top:84px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    .oa_Tab_content{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+}

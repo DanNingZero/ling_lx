@@ -1,0 +1,66 @@
+@import "~asha/_.less";
+
+.header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: #fff;
+    height: 65px;
+    line-height: 65px;
+    border-bottom: 1px solid #eaeaea;
+    >div{
+        >a{
+            display:inline-block;
+            padding:0 15px;
+            >img{
+                &.logo{
+                    width: 2.2rem;
+                }
+            }
+        }
+    }
+    >.h_logo{
+        position: absolute;
+        left: 0;
+        top:19px;
+    }
+    >.h_text{
+        text-align: center;
+        line-height: 65px;
+        font-size: 1.4em;
+    }
+    @media all and (min-width: 768px){
+        height: 70px;
+        line-height: 70px;
+        >div{
+            >a{
+                padding:0 25px;
+                >img{
+                    &.logo{
+                        width: 2.4rem;
+                    }
+                }
+            }
+        }
+        >.h_logo{
+            top:21px;
+        }
+        >.h_text{
+            line-height: 70px;
+        }
+    }
+    @media all and (min-width: 992px){
+        >div{
+            >a{
+                padding:0 35px;
+            }
+        }
+    }
+    @media all and (min-width: 1200px){
+        
+    }
+    @media all and (min-width: 1600px){
+        
+    }
+}
+

@@ -1,0 +1,63 @@
+@import "~asha/_.less";
+
+footer{
+    background-color: #F1EFEF;
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 1em;
+    >.footer{
+        margin-left:auto;
+        margin-right: auto;
+        padding-right: 15px;
+        padding-left:15px;
+        overflow: hidden;
+        >.f_text{
+            padding-right: 15px;
+            padding-left:15px;
+            >em{
+                display: block;
+                line-height: 1.8em;
+                &.copyright{
+                    font-size: .7rem;
+                }
+            }
+        }
+        >.f_img{
+            padding-right: 15px;
+            padding-left:15px;
+            >img{
+                width: 120px;
+            }
+            >img:nth-child(1){
+                margin-right: 20px;
+            }
+        }
+    }
+    @media all and (min-width: 768px){
+        .footer{
+            width: 750px;
+        }
+    }
+    @media all and (min-width: 992px){
+        .footer{
+            width:970px;
+            >.f_text{
+                float: left;
+            }
+            >.f_img{
+                float: right;
+            }
+        }
+    }
+    @media all and (min-width: 1200px){
+        .footer{
+            width:1170px;
+        }
+    }
+    @media all and (min-width: 1600px){
+        .footer{
+            width:1370px;
+        }
+    }
+}
